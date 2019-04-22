@@ -1,0 +1,30 @@
+.grid {
+  display: flex;
+  flex-direction: row;
+
+  .col-half {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and ( min-width: 426px ){
+  .lg-hide {
+    display: none;
+  }
+}
+
+@media only screen and ( max-width: 425px ){
+  .grid {
+    flex-direction: column;
+    .col-half {
+      width: 100%;
+      min-height: 400px;
+    }
+  }
+
+  .sm-hide {
+    display: none;
+  }
+}
