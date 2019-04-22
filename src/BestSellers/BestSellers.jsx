@@ -3,7 +3,8 @@ import React, { Component } from 'react'
 class BestSellers extends Component {
   render() {
     return (
-      <div>Hello from Best Sellers</div>
+      <div className="slide-container">
+      </div>
     )
   }
 }

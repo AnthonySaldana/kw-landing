@@ -3,7 +3,7 @@ import logo from './logo.png'
 import './App.scss'
 import Approach from './Approach/Approach'
 import Banner from './Banner/Banner'
-import BestSellers from './BestSellers/BestSellers'
+// import BestSellers from './BestSellers/BestSellers'
 import Cta from './CTA/CTA'
 import Footer from './Footer/Footer'
 import Feature from './Feature/Feature'
@@ -84,7 +84,7 @@ class App extends Component {
         <Approach header={approach ? approach.header : null} subheader={approach ? approach.subheader : null} rows={approach ? approach.rows : []} />
         <Cta header={cta ? cta.header : null} subheader={cta ? cta.subheader : null} content={cta ? cta.content : null} image={cta ? cta.image : null} flip={true} mobileimage={cta ? cta.mobileimage : null} />
         <Feature header={feature ? feature.header : null} content={feature ? feature.content : null} image={feature ? feature.image : null} />
-        <BestSellers products={bestsellers ? bestsellers.products : null} />
+        { /*<BestSellers products={bestsellers ? bestsellers.products : null} />*/ }
         <Banner image={banner ? banner.image : null} header={banner ? banner.header : null} content={banner ? banner.content : null} mobileimage={ banner ? banner.mobileimage : null} />
         <ShopNow products={shop ? shop.products : []} header={shop ? shop.header : null} />
         <Footer logo={footer ? footer.logo : null} copyright={footer ? footer.copyright : null} links={footer ? footer.links : []} social={footer ? footer.social : []} signup={this.handleSignUp} />
