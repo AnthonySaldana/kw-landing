@@ -4,13 +4,15 @@ import './approach.scss'
 class Approach extends Component {
   render() {
     const { header, subheader, rows } = this.props
+    let key = 0
     return (
       <div className="approachwrapper">
-        <h2 dangerouslySetInnerHTML={{ __html: header }}></h2>
-        <p dangerouslySetInnerHTML={{ __html: subheader }}></p>
+        <h2 className="header" dangerouslySetInnerHTML={{ __html: header }}></h2>
+        <p className="subhheader" dangerouslySetInnerHTML={{ __html: subheader }}></p>
         { rows.map(( row ) => {
+            key += 1
             return (
-              <div className="grid">
+              <div className="grid" key={key}>
                 <div className="col-half">
                   <img alt={row.header} src={row.image} />
                 </div>

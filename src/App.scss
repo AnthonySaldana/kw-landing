@@ -9,6 +9,11 @@ h1 {
   font-weight: normal;
 }
 
+.header {
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
 .grid {
   display: flex;
   flex-direction: row;
@@ -18,6 +23,9 @@ h1 {
     width: 50%;
     align-items: center;
     justify-content: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .col-fifth {
@@ -27,7 +35,7 @@ h1 {
 
 @media only screen and ( min-width: 426px ){
   .lg-hide {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -36,11 +44,10 @@ h1 {
     flex-direction: column;
     .col-half {
       width: 100%;
-      min-height: 400px;
     }
   }
 
   .sm-hide {
-    display: none;
+    display: none !important;
   }
 }

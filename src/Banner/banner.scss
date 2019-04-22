@@ -1,9 +1,12 @@
 .bannerwrapper {
-    max-height: 550px;
     background-size: cover;
     min-height: 500px;
     position: relative;
     align-items: center;
+
+    .bannercontentwrapper {
+        max-width: 400px;
+    }
 
     .row-img {
         position: absolute;
@@ -15,10 +18,7 @@
         background-size: contain;
     }
 
-    .col-full {
+    .col-half {
         z-index: 1;
-        max-width: 500px;
-        margin-left: auto;
-        margin-right: 15px;
     }
 }

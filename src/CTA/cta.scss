@@ -1,5 +1,9 @@
 .ctawrapper {
-    max-height: 550px;
+
+    .ctacontentwrapper {
+        max-width: 400px;
+        text-align: center;
+    }
 
     .col-half {
         background-color: #F9F8F6;
@@ -7,6 +11,6 @@
 
     .col-img {
         background-size: cover;
-        min-height: 400px;
+        min-height: 500px;
     }
 }

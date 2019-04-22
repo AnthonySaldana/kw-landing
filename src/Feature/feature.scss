@@ -1,0 +1,27 @@
+.featurewrapper {
+    margin-top: 75px;
+    margin-bottom: 75px;
+
+    .featurecontentwrapper {
+        max-width: 300px;
+
+        .ctabutton {
+            margin-left: 0;
+            margin-right: auto;
+        }
+    }
+
+    .col-half {
+        
+    }
+
+    .col-img {
+        background-size: cover;
+        min-height: 500px;
+    }
+
+    .featureimage {
+        width: 90%;
+        min-width: 200px;
+    }
+}

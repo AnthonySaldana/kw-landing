@@ -1,5 +1,32 @@
 .approachwrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+
+    .header {
+        margin-top: 100px
+    }
+
+    .subhheader {
+        margin-bottom: 50px;
+    }
+
+    .grid {
+        text-align: left;
+        margin-bottom: 50px;
+        align-items: center;
+
+        &:last-child {
+            margin-bottom: 150px;
+        }
+    }
+
     .grid:nth-child(even) {
         flex-direction: row-reverse;
+        text-align: right;
+    }
+
+    img {
+        max-width: 300px;
     }
 }

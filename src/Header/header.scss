@@ -1,0 +1,34 @@
+.headerwrapper {
+    padding: 25px;
+    height: 45px;
+    justify-content: center;
+    
+    .logo {
+        width: 150px;
+        height: auto;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .col-half {
+        width: 50%;
+    }
+
+    .ctabutton {
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
+
+@media only screen and ( max-width: 425px ) {
+    .headerwrapper {
+        .logo {
+            width: 120px;
+        }
+
+        .ctabutton {
+            width: 165px;
+            height: 35px;
+        }
+    }
+}

@@ -1,8 +1,30 @@
 .ctabutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: MilanoReg;
     width: 213px;
-    height: 48px;
+    height: 45px;
     left: 296px;
     top: 496px;
     background: #B20610;
+    --notchSize: 10px;
+    -webkit-clip-path: polygon(0% 0, 0 0%, 100% 0%, 100% 0, 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, 0 100%, 0% 100%);
+    clip-path: polygon(0% 0, 0 0%, 100% 0%, 100% 0, 100% calc(100% - var(--notchSize)), calc(100% - var(--notchSize)) 100%, 0 100%, 0% 100%);
+    cursor: pointer;
+    transition: .3s ease all;
+    color: #ffffff;
+    margin: 0 auto;
+
+    &:hover {
+        opacity: .85;
+    }
+
+    &.clearbtn {
+        background-color: transparent;
+        clip-path: none;
+        background-size: contain;
+        background-repeat: no-repeat;
+        color: #000000;
+    }
 }
