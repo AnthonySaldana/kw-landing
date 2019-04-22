@@ -24,7 +24,14 @@ h1 {
     align-items: center;
     justify-content: center;
     display: flex;
+    flex-direction: column;
+  }
+
+  .col-quarter {
+    width: 25%;
+    align-items: center;
     justify-content: center;
+    display: flex;
     flex-direction: column;
   }
 
@@ -39,9 +46,39 @@ h1 {
   }
 }
 
-@media only screen and ( max-width: 425px ){
+@media only screen and ( max-width: 768px ){
+  .grid {
+
+    .mb-half {
+      width: 50%;
+    }
+
+    .mb-full {
+      width: 100%;
+    }
+
+    .mb-one {
+      order: 1;
+    }
+
+    .mb-two {
+      order: 2;
+    }
+
+    .mb-three {
+      order: 3;
+    }
+
+    .mb-four {
+      order: 4;
+    }
+  }
+}
+
+@media only screen and ( max-width: 425px ){ 
   .grid {
     flex-direction: column;
+
     .col-half {
       width: 100%;
     }

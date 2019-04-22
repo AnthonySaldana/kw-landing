@@ -13,7 +13,7 @@ class ShopNow extends Component {
         { products.map(( product ) => {
             key += 1
             return (
-              <div className="col-fifth" key={key}>
+              <div className="col-fifth mb-half" key={key}>
                 <img alt={product.header} src={product.image} />
                 <p>{ product.title }</p>
               </div>                
