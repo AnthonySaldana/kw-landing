@@ -5,6 +5,8 @@ import './footer.scss'
 class Footer extends Component {
   render() {
     const { copyright, links, social } = this.props
+    let linkkey = 0
+    let socialkey = 0
     return (
       <div className="footerwrapper">
         <div className="grid">
@@ -17,8 +19,9 @@ class Footer extends Component {
           <div className="col-quarter mb-two mb-full">
             <div className="links">
               { links.map((link) => {
+                  linkkey += 1
                   return (
-                    <li><a href={link.link} dangerouslySetInnerHTML={{ __html: link.content }}></a></li>
+                    <li key={linkkey}><a href={link.link} dangerouslySetInnerHTML={{ __html: link.content }}></a></li>
                   )
               }) }
             </div>
@@ -26,8 +29,9 @@ class Footer extends Component {
           <div className="col-quarter mb-three mb-half">
             <div className="social">
               { social.map((link) => {
+                    socialkey += 1
                     return (
-                      <li><a href={link.link} dangerouslySetInnerHTML={{ __html: link.type }}></a></li>
+                      <li key={socialkey}><a href={link.link} dangerouslySetInnerHTML={{ __html: link.type }}></a></li>
                     )
                 }) }
             </div>

@@ -12,7 +12,7 @@ class Feature extends Component {
             <h2 className="header" dangerouslySetInnerHTML={{ __html: header }}></h2>
             { subheader ? <p className="subheader" dangerouslySetInnerHTML={{ __html: subheader }}></p> : null }
             <p dangerouslySetInnerHTML={{ __html: content }}></p>
-            <Button type="link" text="Learn More" />
+            <Button type="link" text="LEARN MORE" />
           </div>
         </div>
         <div className="col-half col-img">

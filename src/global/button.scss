@@ -27,4 +27,12 @@
         background-repeat: no-repeat;
         color: #000000;
     }
+
+    &.linkbtn {
+        background: transparent;
+        color: BLACK;
+        border-bottom: 1px solid black;
+        width: 107px;
+        justify-content: end;
+    }
 }
