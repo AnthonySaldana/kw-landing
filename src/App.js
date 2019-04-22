@@ -87,7 +87,7 @@ class App extends Component {
         <Feature header={feature ? feature.header : null} content={feature ? feature.content : null} image={feature ? feature.image : null} />
         <BestSellers products={bestsellers ? bestsellers.products : null} />
         <Banner image={banner ? banner.image : null} header={banner ? banner.header : null} content={banner ? banner.content : null} mobileimage={ banner ? banner.mobileimage : null} />
-        <ShopNow products={shop ? shop.products : null} />
+        <ShopNow products={shop ? shop.products : []} />
         <Footer logo={footer ? footer.logo : null} copyright={footer ? footer.copyright : null} links={footer ? footer.links : null} social={footer ? footer.social : null} signup={this.handleSignUp} />
       </div>
     )

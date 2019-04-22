@@ -1,11 +1,27 @@
+@font-face { font-family: MilanoReg; src: url('/assets/MTTMilano-Regular.otf'); }
+@font-face { font-family: MilanoMed; src: url('/assets/MTTMilano-Medium.otf'); }
+@font-face { font-family: Genre; src: url('/assets/Genre.otf'); }
+body{
+  font-family: Genre;
+}
+
+h1 {
+  font-weight: normal;
+}
+
 .grid {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 
   .col-half {
     width: 50%;
     align-items: center;
     justify-content: center;
+  }
+
+  .col-fifth {
+    width: calc(100% / 5);
   }
 }
 
