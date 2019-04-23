@@ -41,6 +41,56 @@ h1 {
   }
 }
 
+.carousel-control-prev {
+  background: url('./left.png');
+}
+
+.carousel-control-next {
+  background: url('./right.png');
+}
+
+.carousel.carousel-slider {
+
+  .control-next.control-arrow:before {
+    border-left: 8px solid black;
+  }
+
+  .control-prev.control-arrow:before {
+    border-right: 8px solid black;
+  }
+
+  .carousel-status {
+    color: grey;
+    text-shadow: none;
+  }
+
+  .control-dots {
+    transition: .3s ease all;
+
+    .dot {
+      height: 5px;
+      width: 30px;
+      border-radius: 0;
+      border-top: 1px solid grey;
+      margin: 0;
+      box-shadow: none;
+      border-bottom: 1px solid grey;
+      
+      &.selected {
+        background: #000000;
+      }
+
+      &:first-child {
+        border-left: 1px solid grey;
+      }
+
+      &:last-child {
+        border-right: 1px solid grey;
+      }
+    }
+  }
+}
+
 @media only screen and ( min-width: 426px ){
   .lg-hide {
     display: none !important;
