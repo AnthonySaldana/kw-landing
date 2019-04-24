@@ -1,4 +1,4 @@
-.ctabutton {
+a.ctabutton {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,6 +16,10 @@
     color: #ffffff;
     margin: 0 auto;
 
+    span {
+        color: #ffffff;
+    }
+
     &:hover {
         opacity: .85;
     }
@@ -25,14 +29,20 @@
         clip-path: none;
         background-size: contain;
         background-repeat: no-repeat;
-        color: #000000;
+
+        span{
+            color: #000000;
+        }
     }
 
     &.linkbtn {
         background: transparent;
-        color: BLACK;
         border-bottom: 1px solid black;
         width: 107px;
         justify-content: end;
+
+        span {
+            color: #000000;
+        }
     }
 }

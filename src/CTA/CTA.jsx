@@ -4,7 +4,7 @@ import './cta.scss'
 
 class CTA extends Component {
   render() {
-    const { header, subheader, content, image, mobileimage, flip } = this.props
+    const { header, subheader, content, image, mobileimage, flip, btnlink } = this.props
     return (
       <div className="ctawrapper grid" >
       { flip ? <React.Fragment>
@@ -13,18 +13,18 @@ class CTA extends Component {
           <div className="col-half">
             <div className="ctacontentwrapper">
               <h1 dangerouslySetInnerHTML={{ __html: header }}></h1>
-              { subheader ? <p className="subheader" dangerouslySetInnerHTML={{ __html: subheader }}></p> : null }
+              { subheader ? <h3 className="subheader" dangerouslySetInnerHTML={{ __html: subheader }}></h3> : null }
               <p dangerouslySetInnerHTML={{ __html: content }}></p>
-              <Button />
+              <Button link={btnlink} />
             </div>
         </div>        
       </React.Fragment> : <React.Fragment>
         <div className="col-half">
           <div className="ctacontentwrapper">
             <h1 dangerouslySetInnerHTML={{ __html: header }}></h1>
-            { subheader ? <p className="subheader" dangerouslySetInnerHTML={{ __html: subheader }}></p> : null }
+            { subheader ? <h3 className="subheader" dangerouslySetInnerHTML={{ __html: subheader }}></h3> : null }
             <p dangerouslySetInnerHTML={{ __html: content }}></p>
-            <Button />
+            <Button link={btnlink} />
           </div>
         </div>        
         <div className="col-half col-img sm-hide" style={{ backgroundImage: `url(${image})` }}></div>

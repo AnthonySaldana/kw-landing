@@ -4,7 +4,7 @@ import './feature.scss'
 
 class Feature extends Component {
   render() {
-    const { header, subheader, content, image } = this.props
+    const { header, subheader, content, image, btnlink } = this.props
     return (
       <div className="featurewrapper grid" >
         <div className="col-half">
@@ -12,7 +12,7 @@ class Feature extends Component {
             <h2 className="header" dangerouslySetInnerHTML={{ __html: header }}></h2>
             { subheader ? <p className="subheader" dangerouslySetInnerHTML={{ __html: subheader }}></p> : null }
             <p dangerouslySetInnerHTML={{ __html: content }}></p>
-            <Button type="link" text="LEARN MORE" />
+            <Button type="link" text="LEARN MORE" link={btnlink} />
           </div>
         </div>
         <div className="col-half col-img">

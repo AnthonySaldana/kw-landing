@@ -14,8 +14,10 @@ class ShopNow extends Component {
             key += 1
             return (
               <div className="col-fifth mb-half" key={key}>
+                <a href={product.link}>
                 <img alt={product.header} src={product.image} />
                 <p>{ product.title }</p>
+                </a>
               </div>                
             )
         }) }

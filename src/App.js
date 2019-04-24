@@ -79,13 +79,13 @@ class App extends Component {
   })
     return (
       <div className="App">
-        <Header logo={logo} logoalt="Kjaer Weis Logo" />
-        <Cta header={header ? header.header : null} content={header ? header.content : null} image={header ? header.image : null} mobileimage={header ? header.mobileimage : null} />
+        <Header logo={logo} logoalt="Kjaer Weis Logo" btnlink={ header ? header.navlink : "" } />
+        <Cta header={header ? header.header : null} btnlink={ header ? header.btnlink : "" } content={header ? header.content : null} image={header ? header.image : null} mobileimage={header ? header.mobileimage : null} />
         <Approach header={approach ? approach.header : null} subheader={approach ? approach.subheader : null} rows={approach ? approach.rows : []} />
-        <Cta header={cta ? cta.header : null} subheader={cta ? cta.subheader : null} content={cta ? cta.content : null} image={cta ? cta.image : null} flip={true} mobileimage={cta ? cta.mobileimage : null} />
-        <Feature header={feature ? feature.header : null} content={feature ? feature.content : null} image={feature ? feature.image : null} />
+        <Cta header={cta ? cta.header : null} subheader={cta ? cta.subheader : null} content={cta ? cta.content : null} btnlink={ cta ? cta.btnlink : "" }  image={cta ? cta.image : null} flip={true} mobileimage={cta ? cta.mobileimage : null} />
+        <Feature btnlink={ feature ? feature.btnlink : "" } header={feature ? feature.header : null} content={feature ? feature.content : null} image={feature ? feature.image : null} />
         <BestSellers header={ bestsellers ? bestsellers.header : null } subheader={ bestsellers ? bestsellers.subheader : null } products={bestsellers ? bestsellers.products : []} />
-        <Banner image={banner ? banner.image : null} header={banner ? banner.header : null} content={banner ? banner.content : null} mobileimage={ banner ? banner.mobileimage : null} />
+        <Banner image={banner ? banner.image : null} header={banner ? banner.header : null} subheader={banner ? banner.subheader : null} content={banner ? banner.content : null} mobileimage={ banner ? banner.mobileimage : null} />
         <ShopNow products={shop ? shop.products : []} header={shop ? shop.header : null} />
         <Footer logo={footer ? footer.logo : null} copyright={footer ? footer.copyright : null} links={footer ? footer.links : []} social={footer ? footer.social : []} signup={this.handleSignUp} />
       </div>

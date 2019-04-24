@@ -3,7 +3,7 @@ import './banner.scss'
 
 class Banner extends Component {
   render() {
-    const { header, content, image, mobileimage } = this.props
+    const { header, subheader, content, image, mobileimage } = this.props
     return (
       <div className="bannerwrapper grid" >
           <div className="row-img sm-hide" style={{ backgroundImage: `url(${image})` }}></div>
@@ -12,6 +12,7 @@ class Banner extends Component {
           <div className="col-half">
             <div className="bannercontentwrapper">
               <h2 className="header" dangerouslySetInnerHTML={{ __html: header }}></h2>
+              <h3 className="subheader" dangerouslySetInnerHTML={{ __html: subheader }}></h3>
               <p dangerouslySetInnerHTML={{ __html: content }}></p>
             </div>
           </div>

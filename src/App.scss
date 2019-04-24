@@ -5,9 +5,21 @@ body{
   font-family: Genre;
 }
 
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 h1 {
   font-weight: normal;
   font-size: 2.5em;
+}
+
+h3 {
+  font-size: 22px;
 }
 
 .header {
@@ -51,12 +63,22 @@ h1 {
 
 .carousel.carousel-slider {
 
+  .control-next.control-arrow:before, .control-prev.control-arrow:before {
+    height: 20px;
+    width: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
   .control-next.control-arrow:before {
-    border-left: 8px solid black;
+    background-image: url('./right.png');
+    border: none;
   }
 
   .control-prev.control-arrow:before {
-    border-right: 8px solid black;
+    
+    border: none;
+    background-image: url('./left.png');
   }
 
   .carousel-status {
@@ -69,7 +91,7 @@ h1 {
 
     .dot {
       height: 5px;
-      width: 30px;
+      width: calc((100% - 50%) / 4);
       border-radius: 0;
       border-top: 1px solid grey;
       margin: 0;
