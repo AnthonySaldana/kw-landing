@@ -34,6 +34,50 @@
             text-decoration: none;
         }
     }
+
+    .social-col{ 
+        width: 20%; 
+    }
+
+    .newsletter-col{
+        width: 30%;
+        padding-right: 15px;
+    }
+}
+
+@media only screen and ( max-width: 768px ) { 
+    .footerwrapper {
+        .links {
+            width: 100%;
+            li {
+                width: 50%;
+            }
+        }
+
+        div.newsletter-col {
+            margin-bottom: 15px;
+
+            .newsletter {
+                width: 100%;
+            }
+
+            width: 100%;
+        }
+
+        .logo-col{
+            width: 50%;
+            justify-content: flex-start;
+        }
+
+        .links-col {
+            margin-bottom :15px;
+        }
+
+        .social-col{ 
+            width: 50%; 
+            justify-content: flex-start;
+        }
+    }
 }
 
 @media only screen and ( max-width: 425px ) {

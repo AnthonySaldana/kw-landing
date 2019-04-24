@@ -17,7 +17,20 @@
         bottom: 0;
         top: 0;
         width: 100%;
-        background-size: contain;
+        background-size: cover;
+        background-color: #ebdcdb;
+    }
+
+    @media only screen and ( max-width: 768px ) {
+        .row-img {
+            background-size: contain;
+            background-repeat: no-repeat;
+            top: -50px;
+        }
+
+        .col-half {
+            width: 100%;
+        }
     }
 
     .col-half {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Logo from './footer-logo.svg'
 import './footer.scss'
+import Newsletter from '../Newsletter/Newsletter';
 
 class Footer extends Component {
   render() {
@@ -10,13 +11,13 @@ class Footer extends Component {
     return (
       <div className="footerwrapper">
         <div className="grid">
-          <div className="col-quarter mb-four mb-half">
+          <div className="col-quarter mb-four mb-half logo-col">
             <div className="logowrapper">
               <img src={Logo} />
               <div dangerouslySetInnerHTML={{ __html: copyright }}></div>
             </div>
           </div>
-          <div className="col-quarter mb-two mb-full">
+          <div className="col-quarter mb-two mb-full links-col">
             <div className="links">
               { links.map((link) => {
                   linkkey += 1
@@ -26,7 +27,7 @@ class Footer extends Component {
               }) }
             </div>
           </div>
-          <div className="col-quarter mb-three mb-half">
+          <div className="col-quarter mb-three mb-half social-col">
             <div className="social">
               { social.map((link) => {
                     socialkey += 1
@@ -36,8 +37,10 @@ class Footer extends Component {
                 }) }
             </div>
           </div>
-          <div className="col-quarter mb-one mb-full">
-            <div className="newsletter"></div>
+          <div className="col-quarter mb-one mb-full newsletter-col">
+            <div className="newsletter">
+                <Newsletter />
+            </div>
           </div>
         </div>
       </div>
