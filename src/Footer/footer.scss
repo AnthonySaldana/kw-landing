@@ -38,6 +38,10 @@
 
 @media only screen and ( max-width: 425px ) {
     .footerwrapper {
+        .grid {
+            flex-direction: row;
+        }
+
         .col-half {
             flex-direction: column;
 

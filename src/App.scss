@@ -88,10 +88,12 @@ h3 {
 
   .control-dots {
     transition: .3s ease all;
+    left: 0;
+    padding: 0;
 
     .dot {
       height: 5px;
-      width: calc((100% - 50%) / 4);
+      width: calc((100% - 50%) / 8);
       border-radius: 0;
       border-top: 1px solid grey;
       margin: 0;

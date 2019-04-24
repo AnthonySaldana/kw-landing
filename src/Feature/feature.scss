@@ -10,10 +10,6 @@
         }
     }
 
-    .col-half {
-        
-    }
-
     .col-img {
         background-size: cover;
         min-height: 500px;
@@ -22,5 +18,27 @@
     .featureimage {
         width: 90%;
         min-width: 200px;
+    }
+
+    @media only screen and ( max-width: 425px ){ 
+        margin: 50px auto;
+        margin-bottom: 75px;
+
+        .col-half {
+            order: 2;
+            text-align: center;
+        }
+
+        .col-img {
+            order: 1;
+            min-height: auto;
+            margin-bottom: 25px;
+        }
+
+        .featurecontentwrapper {
+            .ctabutton {
+                margin: 0 auto;
+            }
+        }
     }
 }
