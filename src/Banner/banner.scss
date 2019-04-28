@@ -26,6 +26,9 @@
     }
 
     @media only screen and ( max-width: 768px ) and ( min-width: 425px ) {
+        padding-top: 0;
+        overflow: hidden;
+        
         .row-img {
             &.tb-show-only {
                 display: flex;
