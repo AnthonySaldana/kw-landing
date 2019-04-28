@@ -12,7 +12,7 @@ class BestSellers extends Component {
       <div className="slide-container">
         <h2 className="header" dangerouslySetInnerHTML={{ __html: header }}></h2>
         <p className="subhheader" dangerouslySetInnerHTML={{ __html: subheader }}></p>
-        <Carousel showArrows={true} showThumbs={false} centerMode={true} centerSlidePercentage={ currentBreakpoint === "desktop" ? 23 : 100 } infiniteLoop={true} swipeable={true}
+        <Carousel showArrows={true} showThumbs={false} centerMode={true} centerSlidePercentage={ currentBreakpoint === "tablet" || currentBreakpoint === "desktop" ? 23 : 100 } infiniteLoop={true} swipeable={true}
         statusFormatter={(current, total) => {return(`${current}/${total}`)}}>
           { products.map((product) => {
               productKey += 1

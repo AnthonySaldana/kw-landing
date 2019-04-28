@@ -3,10 +3,11 @@ import './banner.scss'
 
 class Banner extends Component {
   render() {
-    const { header, subheader, content, image, mobileimage } = this.props
+    const { header, subheader, content, image, mobileimage, tabletimage } = this.props
     return (
       <div className="bannerwrapper grid" >
           <div className="row-img sm-hide" style={{ backgroundImage: `url(${image})` }}></div>
+          <div className="row-img tb-show-only" style={{ backgroundImage: `url(${tabletimage})` }}></div>
           <div className="row-img lg-hide" style={{ backgroundImage: `url(${mobileimage})` }}></div>
           <div className="col-half"></div>
           <div className="col-half">

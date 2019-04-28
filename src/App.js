@@ -113,7 +113,14 @@ class App extends Component {
           subheader={ bestsellers ? bestsellers.subheader : null }
           products={bestsellers ? bestsellers.products : []}
         />
-        <Banner image={banner ? banner.image : null} header={banner ? banner.header : null} subheader={banner ? banner.subheader : null} content={banner ? banner.content : null} mobileimage={ banner ? banner.mobileimage : null} />
+        <Banner
+          image={banner ? banner.image : null}
+          header={banner ? banner.header : null}
+          subheader={banner ? banner.subheader : null}
+          content={banner ? banner.content : null}
+          mobileimage={ banner ? banner.mobileimage : null}
+          tabletimage={ banner ? banner.tabletimage : null }
+        />
         <ShopNow products={shop ? shop.products : []} header={shop ? shop.header : null} />
         <Footer logo={footer ? footer.logo : null} copyright={footer ? footer.copyright : null} links={footer ? footer.links : []} social={footer ? footer.social : []} signup={this.handleSignUp} />
       </div>

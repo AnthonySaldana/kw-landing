@@ -135,10 +135,6 @@ input {
   }
   .grid {
 
-    .mb-half {
-      width: 50%;
-    }
-
     .mb-full {
       width: 100%;
     }
@@ -164,6 +160,10 @@ input {
 @media only screen and ( max-width: 425px ){ 
   .grid {
     flex-direction: column;
+
+    .mb-half {
+      width: 50%;
+    }
 
     .col-half {
       width: 100%;

@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import ReactBreakpoints from 'react-breakpoints'
 const breakpoints = {
     mobile: 425,
-    tabelt: 768,
+    tablet: 768,
     desktop: 769
   }
 
