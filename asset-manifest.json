@@ -1,5 +1,5 @@
 {
-  "main.css": "/kw-landing/static/css/main.0752138e.chunk.css",
+  "main.css": "/kw-landing/static/css/main.838f61f8.chunk.css",
   "main.js": "/kw-landing/static/js/main.547b861b.chunk.js",
   "main.js.map": "/kw-landing/static/js/main.547b861b.chunk.js.map",
   "runtime~main.js": "/kw-landing/static/js/runtime~main.b59a6eb5.js",
@@ -8,10 +8,10 @@
   "static/js/2.235f9a6d.chunk.js": "/kw-landing/static/js/2.235f9a6d.chunk.js",
   "static/js/2.235f9a6d.chunk.js.map": "/kw-landing/static/js/2.235f9a6d.chunk.js.map",
   "index.html": "/kw-landing/index.html",
-  "precache-manifest.a89bdbdba0b8d86c5ea30d1f2c43c562.js": "/kw-landing/precache-manifest.a89bdbdba0b8d86c5ea30d1f2c43c562.js",
+  "precache-manifest.1c0ae16b5a8498d7683e6a2cb904d0de.js": "/kw-landing/precache-manifest.1c0ae16b5a8498d7683e6a2cb904d0de.js",
   "service-worker.js": "/kw-landing/service-worker.js",
   "static/css/2.4569a16f.chunk.css.map": "/kw-landing/static/css/2.4569a16f.chunk.css.map",
-  "static/css/main.0752138e.chunk.css.map": "/kw-landing/static/css/main.0752138e.chunk.css.map",
+  "static/css/main.838f61f8.chunk.css.map": "/kw-landing/static/css/main.838f61f8.chunk.css.map",
   "static/media/App.scss": "/kw-landing/static/media/MTTMilano-Regular.390c18ec.otf",
   "static/media/footer-logo.svg": "/kw-landing/static/media/footer-logo.2fab7386.svg"
 }
