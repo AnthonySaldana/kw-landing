@@ -76,6 +76,12 @@
         }
     }
 
+    @media only screen and ( max-width: 768px ) and ( min-width: 425px ) {
+        .carousel .slide {
+            height: 230px;
+        }
+    }
+
     @media only screen and ( max-width: 425px ){
         .carousel{
             padding: 60px;
