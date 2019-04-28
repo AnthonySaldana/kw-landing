@@ -101,6 +101,7 @@ class App extends Component {
           image={cta ? cta.image : null}
           flip={true}
           mobileimage={cta ? cta.mobileimage : null}
+          mobileheight={300}
         />
         <Feature
           btnlink={ feature ? feature.btnlink : "" }

@@ -4,7 +4,7 @@ import './cta.scss'
 
 class CTA extends Component {
   render() {
-    const { header, subheader, content, image, mobileimage, flip, btnlink, offset } = this.props
+    const { header, subheader, content, image, mobileimage, flip, btnlink, offset, mobileheight } = this.props
     let wrapClasses = "ctawrapper grid"
     if ( offset ) { wrapClasses += " offset" }
 
@@ -12,7 +12,7 @@ class CTA extends Component {
       <div className={wrapClasses}>
       { flip ? <React.Fragment>
           <div className="col-half col-img sm-hide" style={{ backgroundImage: `url(${image})` }}></div>
-          <div className="col-half col-img lg-hide" style={{ backgroundImage: `url(${mobileimage})` }}></div>
+          <div className="col-half col-img lg-hide" style={{ backgroundImage: `url(${mobileimage})`, minHeight: mobileheight ? mobileheight : '500px' }}></div>
           <div className="col-half col-content">
             <div className="ctacontentwrapper">
               <h1 dangerouslySetInnerHTML={{ __html: header }}></h1>
