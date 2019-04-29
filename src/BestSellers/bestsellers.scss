@@ -11,9 +11,9 @@
 
         .carousel-status {
             position: absolute;
-            bottom: -25px;
-            left: 0;
-            right: 0;
+            bottom: -11px;
+            left: 33%;
+            right: auto;
             top: auto;
         }
 
@@ -51,11 +51,11 @@
         }
 
         .control-prev{
-            left: 15%;
+            left: 25%;
         }
 
         .control-next{
-            right: 15%;
+            right: 25%;
         }
 
         .control-prev, .control-next {
@@ -92,6 +92,18 @@
                 .slide {
                     margin-right: 0;
                 }
+            }
+
+            .control-prev{
+                left: 14%;
+            }
+    
+            .control-next{
+                right: 14%;
+            }
+    
+            .carousel-status {
+                left: 30%;
             }
         }
     }
