@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './newsletter.scss'
 import Button from '../global/button'
+import { withBreakpoints } from 'react-breakpoints'
 
 class Newsletter extends Component {
 constructor(props) {
@@ -23,6 +24,7 @@ handleChange = (e) => {
 
 render() {
     const { email } = this.state
+    const { tabletbuttonimage, currentBreakpoint } = this.props
     return (
       <div className="newsletterwrapper">
         <input name="email" type="text" value={email} onChange={this.handleChange} placeholder="Sign up to our mailing list" />
@@ -32,4 +34,4 @@ render() {
   }
 }
 
-export default Newsletter
+export default withBreakpoints( Newsletter )

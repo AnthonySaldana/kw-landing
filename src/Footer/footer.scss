@@ -5,8 +5,14 @@
     justify-content: center;
     padding: 15px;
 
+    input {
+        border-radius: none;
+    }
+
     .grid {
         height: 100%;
+        align-items: flex-start;
+        padding-top: 80px;
     }
 
     .col-quarter {
@@ -36,17 +42,35 @@
     }
 
     .social-col{ 
-        width: 20%; 
+        width: 15%; 
+
+        img.social-icon {
+            margin-right: 10px;
+            max-height: 20px;
+            width: auto;
+            height: auto;
+            max-width: 15px;
+        }
     }
 
     .newsletter-col{
-        width: 30%;
+        width: 35%;
         padding-right: 15px;
+
+        .newsletter {
+            height:135px;
+        }
     }
 }
 
 @media only screen and ( max-width: 768px ) { 
     .footerwrapper {
+        height: auto;
+
+        .grid {
+            padding-top: 0;
+        }
+
         .links {
             width: 100%;
             li {

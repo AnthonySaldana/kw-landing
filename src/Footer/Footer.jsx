@@ -5,7 +5,7 @@ import Newsletter from '../Newsletter/Newsletter';
 
 class Footer extends Component {
   render() {
-    const { copyright, links, social } = this.props
+    const { copyright, links, social, tabletbuttonimage } = this.props
     let linkkey = 0
     let socialkey = 0
     return (
@@ -32,14 +32,19 @@ class Footer extends Component {
               { social.map((link) => {
                     socialkey += 1
                     return (
-                      <li key={socialkey}><a href={link.link} dangerouslySetInnerHTML={{ __html: link.type }}></a></li>
+                      <li key={socialkey} className="social-icon-list">
+                        <div style={{ width: "30px", display: "inline-block", marginBottom: '15px' }}>
+                          <img src={link.icon} className="social-icon" alt={`${link.type} icon`} />
+                        </div>
+                        <a href={link.link} dangerouslySetInnerHTML={{ __html: link.type }}></a>
+                      </li>
                     )
                 }) }
             </div>
           </div>
           <div className="col-quarter mb-one mb-full newsletter-col">
             <div className="newsletter">
-                <Newsletter />
+                <Newsletter tabletimage={tabletbuttonimage} />
             </div>
           </div>
         </div>
