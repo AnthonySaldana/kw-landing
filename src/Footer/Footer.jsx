@@ -33,7 +33,7 @@ class Footer extends Component {
                     socialkey += 1
                     return (
                       <li key={socialkey} className="social-icon-list">
-                        <div style={{ width: "30px", display: "inline-block", marginBottom: '15px' }}>
+                        <div style={{ width: "30px", display: "inline-block" }}>
                           <img src={link.icon} className="social-icon" alt={`${link.type} icon`} />
                         </div>
                         <a href={link.link} dangerouslySetInnerHTML={{ __html: link.type }}></a>

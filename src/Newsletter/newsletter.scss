@@ -18,11 +18,28 @@
 
     @media only screen and (max-width: 768px) {
         input {
-            width: 100%;
+            width: 50%;
         }
 
         a.ctabutton {
-            height: auto;
+            height: 38px;
+            background-image: url("https://qontent.app/wp-content/uploads/2019/04/Rectangle-3.1-1-min.png") !important;
+            width: 314px;
+        }
+    }
+
+    @media only screen and (max-width: 425px) {
+        flex-direction: column;
+
+        input {
+            width: 100%;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+
+        a.ctabutton {
+            background-image: url("https://qontent.app/wp-content/uploads/2019/04/Rectangle-3.1-2-min.png") !important;
+            width: 100%;
         }
     }
 }

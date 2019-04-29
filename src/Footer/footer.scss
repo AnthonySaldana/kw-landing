@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     padding: 15px;
+    font-family: MilanoReg;
 
     input {
         border-radius: 0;
@@ -22,7 +23,7 @@
 
     .links {
         min-width: 275px;
-        height: 80px;
+        height: 100px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -33,7 +34,7 @@
         list-style: none;
         font-family: MilanoReg;
         font-size: 14px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
 
         a{
             color: #949497;
@@ -64,6 +65,7 @@
 }
 
 @media only screen and ( max-width: 768px ) { 
+    
     .footerwrapper {
         height: auto;
 
@@ -83,6 +85,8 @@
 
             .newsletter {
                 width: 100%;
+                height: auto;
+                min-height: 75px;
             }
 
             width: 100%;
@@ -115,6 +119,26 @@
 
             .links {
                 width: 100%;
+            }
+        }
+
+        .logowrapper {
+            display: flex;
+            font-size: 12px;
+            height: 125px;
+
+            img {
+                width: 55px;
+                margin-right: 15px;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+            }
+
+            p {
+                margin: 0;
             }
         }
     }
