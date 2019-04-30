@@ -16,6 +16,7 @@
 
     input {
         border-radius: 0;
+        font-size: 11px;
     }
 
     .grid {
@@ -41,7 +42,7 @@
     li{
         list-style: none;
         font-family: MilanoReg;
-        font-size: 14px;
+        font-size: 11px;
         margin-bottom: 10px;
 
         a{
@@ -50,12 +51,16 @@
         }
     }
 
+    .social {
+        margin-top: 5px;
+    }
+
     .social-col{ 
         width: 15%; 
 
         img.social-icon {
             margin-right: 10px;
-            max-height: 20px;
+            max-height: 15px;
             width: auto;
             height: auto;
             max-width: 15px;
@@ -68,6 +73,20 @@
 
         .newsletter {
             height:135px;
+        }
+    }
+}
+
+@media only screen and ( max-width: 1025px ) and ( min-width: 769px ) {
+    .newsletter .newsletterwrapper{
+        input {
+            min-width: 150px;
+        }
+
+        a.ctabutton {
+            width: 125px;
+            height: 27px;
+            font-size: 10px;
         }
     }
 }
