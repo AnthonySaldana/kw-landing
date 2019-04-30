@@ -121,6 +121,7 @@ class App extends Component {
           content={banner ? banner.content : null}
           mobileimage={ banner ? banner.mobileimage : null}
           tabletimage={ banner ? banner.tabletimage : null }
+          trimmedimage={ banner ? banner.trimmedimage : null }
         />
         <ShopNow products={shop ? shop.products : []} header={shop ? shop.header : null} />
         <Footer logo={footer ? footer.logo : null} tabletbuttonimage={footer ? footer.tabletbuttonimage : null} copyright={footer ? footer.copyright : null} links={footer ? footer.links : []} social={footer ? footer.social : []} signup={this.handleSignUp} />
