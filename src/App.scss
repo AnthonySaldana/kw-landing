@@ -71,6 +71,10 @@ input {
 
 .carousel.carousel-slider {
 
+  button.control-arrow:hover {
+    background-color: transparent;
+  }
+
   .control-next.control-arrow:before, .control-prev.control-arrow:before {
     height: 15px;
     width: 15px;
@@ -108,6 +112,7 @@ input {
       box-shadow: none;
       border-bottom: 1px solid grey;
       background-color: grey;
+      outline: none;
       
       &.selected {
         background: #000000;
