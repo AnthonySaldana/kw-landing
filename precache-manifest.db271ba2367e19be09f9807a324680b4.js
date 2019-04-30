@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/kw-landing/static/js/runtime~main.b59a6eb5.js"
   },
   {
-    "revision": "27c8204691a58e21ef35",
+    "revision": "f43963cd2fa1260626cd",
     "url": "/kw-landing/static/js/main.fdb50092.chunk.js"
   },
   {
@@ -28,15 +28,15 @@ self.__precacheManifest = [
     "url": "/kw-landing/static/js/2.7dba7e20.chunk.js"
   },
   {
-    "revision": "27c8204691a58e21ef35",
-    "url": "/kw-landing/static/css/main.8850a130.chunk.css"
+    "revision": "f43963cd2fa1260626cd",
+    "url": "/kw-landing/static/css/main.4438ad39.chunk.css"
   },
   {
     "revision": "3c1018d2970afa6b2a1c",
     "url": "/kw-landing/static/css/2.4569a16f.chunk.css"
   },
   {
-    "revision": "f5bd554714e28d828bb254d73be11878",
+    "revision": "8603c6c313d91a89afc2010bc1a5ada9",
     "url": "/kw-landing/index.html"
   }
 ];
