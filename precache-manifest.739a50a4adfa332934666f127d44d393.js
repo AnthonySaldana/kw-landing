@@ -20,23 +20,23 @@ self.__precacheManifest = [
     "url": "/kw-landing/static/js/runtime~main.b59a6eb5.js"
   },
   {
-    "revision": "32f4100f563a8150cd3d",
-    "url": "/kw-landing/static/js/main.5bdad23f.chunk.js"
+    "revision": "353988e2785dc3843941",
+    "url": "/kw-landing/static/js/main.fdb50092.chunk.js"
   },
   {
     "revision": "3c1018d2970afa6b2a1c",
     "url": "/kw-landing/static/js/2.7dba7e20.chunk.js"
   },
   {
-    "revision": "32f4100f563a8150cd3d",
-    "url": "/kw-landing/static/css/main.1e4be05f.chunk.css"
+    "revision": "353988e2785dc3843941",
+    "url": "/kw-landing/static/css/main.cec6cfbe.chunk.css"
   },
   {
     "revision": "3c1018d2970afa6b2a1c",
     "url": "/kw-landing/static/css/2.4569a16f.chunk.css"
   },
   {
-    "revision": "891c0b5826142e80e522c4795d149326",
+    "revision": "c309695445c6e525702f36b19fde88b4",
     "url": "/kw-landing/index.html"
   }
 ];
