@@ -89,6 +89,24 @@
             font-size: 10px;
         }
     }
+
+    .footerwrapper {
+        .logo-col{
+            width: 12%;
+
+            img {
+                width: 75px;
+            }
+        }
+
+        .links {
+            min-width: 225px;
+        }
+
+        .links-col {
+            width: 33%;
+        }
+    }
 }
 
 @media only screen and ( max-width: 768px ) { 

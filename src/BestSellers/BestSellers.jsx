@@ -17,10 +17,18 @@ class BestSellers extends Component {
           { products.map((product) => {
               productKey += 1
               return ( <div key={productKey} className="carousel-slide">
-                <img
-                  src={product.image}
-                  alt="First slide"
-                />
+                <a href={product.link} style={{ width: "100%", height: "100%" }}>
+                  <img
+                    src={product.image}
+                    alt="front slide"
+                    className="frontimage"
+                  />
+                  <img
+                    src={product.flipimage}
+                    alt="flip slide"
+                    className="flipimage"
+                  />
+                </a>
               </div> )
           }) }
         </Carousel>
