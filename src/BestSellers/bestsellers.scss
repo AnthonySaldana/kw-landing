@@ -23,7 +23,7 @@
         .slide {
             background: transparent;
             height: 300px;
-            border: .35px solid #e3e3e3;
+            border: 1px solid #e3e3e3;
             padding: 0;
             margin-right: 1.5%;
             display: flex;
@@ -44,13 +44,15 @@
                 }
             }
 
-            &:hover {
-                .carousel-slide {
-                    -webkit-transform: scaleX(-1);
-                    transform: scaleX(-1);
-
-                    .frontimage {
-                        display: none;
+            @media only screen and ( min-width: 426px ) {
+                &:hover {
+                    .carousel-slide {
+                        -webkit-transform: scaleX(-1);
+                        transform: scaleX(-1);
+    
+                        .frontimage {
+                            display: none;
+                        }
                     }
                 }
             }
