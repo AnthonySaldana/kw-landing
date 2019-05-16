@@ -133,7 +133,7 @@ input {
   }
 }
 
-@media only screen and ( min-width: 426px ){
+@media only screen and ( min-width: 551px ){
   .lg-hide {
     display: none !important;
   }
@@ -167,7 +167,7 @@ input {
   }
 }
 
-@media only screen and ( max-width: 425px ){ 
+@media only screen and ( max-width: 550px ) { 
   .grid {
     flex-direction: column;
 
