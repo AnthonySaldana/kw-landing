@@ -5,7 +5,7 @@ import Newsletter from '../Newsletter/Newsletter';
 
 class Footer extends Component {
   render() {
-    const { copyright, links, social, tabletbuttonimage } = this.props
+    const { copyright, links, social, tabletbuttonimage, formUrl } = this.props
     let linkkey = 0
     let socialkey = 0
     return (
@@ -44,7 +44,7 @@ class Footer extends Component {
           </div>
           <div className="col-quarter mb-one mb-full newsletter-col">
             <div className="newsletter">
-                <Newsletter tabletimage={tabletbuttonimage} />
+                <Newsletter tabletimage={tabletbuttonimage} formUrl={formUrl} />
             </div>
           </div>
         </div>

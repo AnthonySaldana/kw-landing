@@ -1,7 +1,7 @@
 .newsletterwrapper {
     display: flex;
 
-    a.ctabutton{
+    a.ctabutton, button.ctabutton{
         width: 175px;
         height: 37px;
         font-size: 14px;
@@ -21,7 +21,7 @@
             width: 50%;
         }
 
-        a.ctabutton {
+        a.ctabutton, button.ctabutton {
             height: 38px;
             background-image: url("https://qontent.app/wp-content/uploads/2019/04/Rectangle-3.1-1-min.png") !important;
             width: 314px;
@@ -37,7 +37,7 @@
             margin-top: 30px;
         }
 
-        a.ctabutton {
+        a.ctabutton, button.ctabutton {
             background-image: url("https://qontent.app/wp-content/uploads/2019/04/Rectangle-3.1-2-min.png") !important;
             width: 100%;
         }

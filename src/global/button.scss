@@ -1,4 +1,4 @@
-a.ctabutton {
+a.ctabutton, button.ctabutton {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,6 +15,7 @@ a.ctabutton {
     transition: .3s ease all;
     color: #ffffff;
     margin: 0 auto;
+    border: none;
 
     span {
         color: #ffffff;
