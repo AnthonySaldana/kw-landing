@@ -10,7 +10,7 @@
     "react-breakpoints": "^3.0.3",
     "react-dom": "^16.8.6",
     "react-responsive-carousel": "^3.1.49",
-    "react-scripts": "2.1.8",
+    "react-scripts": "5.0.1",
     "swiper": "^4.5.0"
   },
   "scripts": {
